@@ -1,0 +1,52 @@
+{
+  "RN ten Doeschate": {
+    "runsGiven": 4,
+    "ballsBowled": 6,
+    "economyRate": 4
+  },
+  "J Yadav": {
+    "runsGiven": 29,
+    "ballsBowled": 42,
+    "economyRate": 4.142857142857142
+  },
+  "V Kohli": {
+    "runsGiven": 10,
+    "ballsBowled": 11,
+    "economyRate": 5.454545454545454
+  },
+  "R Ashwin": {
+    "runsGiven": 229,
+    "ballsBowled": 234,
+    "economyRate": 5.871794871794871
+  },
+  "S Nadeem": {
+    "runsGiven": 43,
+    "ballsBowled": 42,
+    "economyRate": 6.142857142857142
+  },
+  "Parvez Rasool": {
+    "runsGiven": 31,
+    "ballsBowled": 30,
+    "economyRate": 6.200000000000001
+  },
+  "MC Henriques": {
+    "runsGiven": 164,
+    "ballsBowled": 150,
+    "economyRate": 6.56
+  },
+  "Z Khan": {
+    "runsGiven": 159,
+    "ballsBowled": 145,
+    "economyRate": 6.5793103448275865
+  },
+  "M Vijay": {
+    "runsGiven": 28,
+    "ballsBowled": 24,
+    "economyRate": 7
+  },
+  "GB Hogg": {
+    "runsGiven": 148,
+    "ballsBowled": 126,
+    "economyRate": 7.0476190476190474
+  }
+}

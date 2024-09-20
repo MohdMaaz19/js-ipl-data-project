@@ -3,12 +3,11 @@ import deliveriesData from "../data/deliveriesData.json" assert {type:"json"};
 import * as fs from "fs"
 
 function playerStrikeRatePerYear(matchesData) {
-  // Step 1: Create a map to get the season for each match ID
+
   const matchSeasonMap = new Map(
     matchesData.map(({ id, season }) => [id, season])
   );
 
-  // Step 2: Aggregate deliveries data
   const batsmanStats = deliveriesData.reduce((result, delivery) => {
     const season = matchSeasonMap.get(delivery.match_id);
     if (!season) return result;
@@ -31,18 +30,16 @@ function playerStrikeRatePerYear(matchesData) {
     return result;
   }, {});
 
-  // Step 3: Calculate strike rates and format output
   const formattedOutput = Object.entries(batsmanStats).reduce((result, [batsman, seasonStats]) => {
     result[batsman] = Object.entries(seasonStats).reduce((accu, [season, { balls, runs }]) => {
       const strikeRate = balls > 0 ? (runs / balls) * 100 : 0;
-      // Format to "SR 158.57" for output
+
       accu[`Year ${season}`] = `SR ${strikeRate.toFixed(2)}`;
       return accu;
     }, {});
     return result;
   }, {});
 
-  // Return the final formatted output
   return formattedOutput;
 }
 
